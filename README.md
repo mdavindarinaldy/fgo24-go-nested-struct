@@ -1,6 +1,6 @@
-# Project GO - Append Slice
+# Project GO - Nested Struct
 
-This project was made by Muhammad Davinda Rinaldy in Kodacademy Training Program. This project uses Go Language to append element.
+This project was made by Muhammad Davinda Rinaldy in Kodacademy Training Program. This project uses Go Language to access data from nested struct.
 
 ## Prerequisites
 
