@@ -10,7 +10,7 @@ git clone https://github.com/mdavindarinaldy/fgo24-go-nested-struct.git
 ``` 
 2. Run the project
 ```
-go main.go
+go run main.go
 ```
 
 ## Dependencies
