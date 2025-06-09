@@ -1,31 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fgo24-nested-struct/utils"
+	"fmt"
+)
 
 func main() {
-	type val struct {
-		val string
-	}
-
-	type val1 struct {
-		val val
-	}
-
-	type val3 struct {
-		val []val1
-	}
-
-	type val2 struct {
-		val [][]val3
-	}
-
-	str := val2{
-		val: [][]val3{
+	str := utils.Val2{
+		Val: [][]utils.Val3{
 			{
 				{}, {}, {}, {
-					val: []val1{
+					Val: []utils.Val1{
 						{}, {
-							val: val{val: "Hello"},
+							Val: utils.Val{Val: "Hello"},
 						},
 					},
 				},
@@ -33,5 +20,5 @@ func main() {
 		},
 	}
 
-	fmt.Println(str.val[0][3].val[1].val.val)
+	fmt.Println(str.Val[0][3].Val[1].Val.Val)
 }
