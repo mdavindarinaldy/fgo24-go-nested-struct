@@ -4,22 +4,28 @@ import "fmt"
 
 func main() {
 	type val struct {
-		val []val
+		val string
+	}
+
+	type val1 struct {
+		val val
+	}
+
+	type val3 struct {
+		val []val1
 	}
 
 	type val2 struct {
-		val [][]val
+		val [][]val3
 	}
 
 	str := val2{
-		val: [][]val{
+		val: [][]val3{
 			{
-				{}, {}, {
-					val: []val{
+				{}, {}, {}, {
+					val: []val1{
 						{}, {
-							val: []val{
-								// {val: "Hello!"},
-							},
+							val: val{val: "Hello"},
 						},
 					},
 				},
@@ -27,5 +33,5 @@ func main() {
 		},
 	}
 
-	fmt.Println(str)
+	fmt.Println(str.val[0][3].val[1].val.val)
 }
