@@ -1,14 +1,19 @@
-# Project GO NESTED STRUCT
+# Project GO - Append Slice
 
-This project was made by Muhammad Davinda Rinaldy in Kodacademy Training Program. This project uses Go Language to access data from nested struct.
+This project was made by Muhammad Davinda Rinaldy in Kodacademy Training Program. This project uses Go Language to append element.
+
+## Prerequisites
+
+Make sure you already install Go to run this project
 
 ## How to Run this Project
 
-1. Clone this project
+1. Create a new empty directory for the project and navigate into it
+2. Clone this project into the empty current directory:
 ```
-git clone https://github.com/mdavindarinaldy/fgo24-go-nested-struct.git
+git clone https://github.com/mdavindarinaldy/fgo24-go-nested-struct.git .
 ``` 
-2. Run the project
+3. Run the project
 ```
 go run main.go
 ```
